@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lingkaran">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Luas Lingkaran"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/txJari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="8">
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Jari - jari"/>
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnProses"
+        android:layout_alignBottom="@+id/btnProses"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="myClickHandler"
+        android:text="Hapus"
+        tools:ignore="OnClick"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txLuas"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignBottom="@+id/txLuas"
+        android:text="Luas Lingkaran"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txKeliling"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignBottom="@+id/txKeliling"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Keliling Lingkaran" />
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txJari"
+        android:layout_alignLeft="@+id/txJari"
+        android:layout_marginTop="20dp"
+        android:onClick="myClickHandler"
+        android:text="proses"
+        tools:ignore="OnClick,UsingOnClickInXml"/>
+
+    <EditText
+        android:id="@+id/txLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnProses"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:ems="8"/>
+
+    <EditText
+        android:id="@+id/txKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txLuas"
+        android:layout_alignLeft="@+id/txLuas"
+        android:layout_marginTop="28dp"
+        android:ems="8"/>
+
+
+</RelativeLayout>

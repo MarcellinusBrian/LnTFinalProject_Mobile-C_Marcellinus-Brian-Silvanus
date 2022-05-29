@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".Persegi">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luas Persegi"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sisi"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/txSisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:importantForAutofill="no"
+        android:lines="1"
+        android:minHeight="40dp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hasil"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
